@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "92662654562",
+    "project_id": "dmilf-52633",
+    "storage_bucket": "dmilf-52633.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:92662654562:android:c6be4c8215a4972882933b",
+        "android_client_info": {
+          "package_name": "com.sachin.dmilf"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOPGT6htRC6r6pZtXoiYuKiWl0e8kRW7E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
