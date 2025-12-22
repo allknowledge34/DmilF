@@ -1,6 +1,7 @@
 package com.sachin.dmilf.views.activites;
 
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -9,8 +10,10 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.sachin.dmilf.R;
 import com.sachin.dmilf.databinding.ActivitySignUpBinding;
 import com.sachin.dmilf.models.UserModel;
+import com.sachin.dmilf.utils.LocaleHelper;
 
 public class SignUpActivity extends AppCompatActivity {
 
@@ -33,8 +36,8 @@ public class SignUpActivity extends AppCompatActivity {
         firestore = FirebaseFirestore.getInstance();
 
         progressDialog = new ProgressDialog(this);
-        progressDialog.setTitle("Creating Your Account");
-        progressDialog.setMessage("Your Account Is Creating");
+        progressDialog.setTitle(getString(R.string.creating_account));
+        progressDialog.setMessage(getString(R.string.account_creating));
 
         binding.btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,11 +47,11 @@ public class SignUpActivity extends AppCompatActivity {
                 String password = binding.edtPassword.getText().toString();
 
                 if (name.isEmpty()){
-                    binding.edtName.setError("Enter Your Good Name");
+                    binding.edtName.setError(getString(R.string.enter_good_name));
                 } else if (email.isEmpty()) {
-                    binding.edtEmail.setError("Enter Your Valid Email");
+                    binding.edtEmail.setError(getString(R.string.enter_valid_email));
                 }else if (password.isEmpty()) {
-                    binding.edtPassword.setError("Enter Strong Password");
+                    binding.edtPassword.setError(getString(R.string.enter_strong_password));
                 }else {
 
                     progressDialog.show();
@@ -95,5 +98,9 @@ public class SignUpActivity extends AppCompatActivity {
                 });
     }
 
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(LocaleHelper.onAttach(newBase));
+    }
 
 }

@@ -1,6 +1,7 @@
 package com.sachin.dmilf.views.activites;
 
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -18,7 +19,9 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.sachin.dmilf.AdmobAds.Admob;
+import com.sachin.dmilf.R;
 import com.sachin.dmilf.databinding.ActivityForgetBinding;
+import com.sachin.dmilf.utils.LocaleHelper;
 
 public class ForgetActivity extends AppCompatActivity {
 
@@ -40,7 +43,7 @@ public class ForgetActivity extends AppCompatActivity {
         auth = FirebaseAuth.getInstance();
 
         progressDialog = new ProgressDialog(this);
-        progressDialog.setTitle("Please Wait");
+        progressDialog.setTitle(getString(R.string.please_wait));
 
         binding.btnForget.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,7 +53,7 @@ public class ForgetActivity extends AppCompatActivity {
 
                 if (email.isEmpty()){
 
-                    binding.edtForgetEmail.setError("Enter Valid Email");
+                    binding.edtForgetEmail.setError(getString(R.string.enter_valid_email));
                 }else {
 
                     progressDialog.show();
@@ -63,7 +66,7 @@ public class ForgetActivity extends AppCompatActivity {
 
                                 progressDialog.dismiss();
 
-                                Toast.makeText(ForgetActivity.this, "Please Check Your Email", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ForgetActivity.this, getString(R.string.check_email), Toast.LENGTH_SHORT).show();
                                 Intent intent = new Intent(ForgetActivity.this, LoginActivity.class);
                                 startActivity(intent);
                                 finish();
@@ -87,5 +90,10 @@ public class ForgetActivity extends AppCompatActivity {
                 finish();
             }
         });
+    }
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(LocaleHelper.onAttach(newBase));
     }
 }

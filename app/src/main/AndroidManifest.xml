@@ -16,6 +16,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DmilF">
         <activity
+            android:name=".views.activites.UpdateApplication"
+            android:exported="false" />
+        <activity
             android:name=".views.activites.SplashScreenActivity"
             android:exported="true">
             <intent-filter>
@@ -44,13 +47,11 @@
             android:exported="false" />
         <activity
             android:name=".views.activites.MainActivity"
-            android:exported="false">
-        </activity>
+            android:exported="false"></activity>
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-3940256099942544~3347511713" />
-
     </application>
 
 </manifest>

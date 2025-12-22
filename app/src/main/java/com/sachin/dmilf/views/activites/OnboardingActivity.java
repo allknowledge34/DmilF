@@ -1,5 +1,6 @@
 package com.sachin.dmilf.views.activites;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
@@ -19,6 +20,7 @@ import androidx.viewpager.widget.ViewPager;
 import com.sachin.dmilf.Helpers.SaveState;
 import com.sachin.dmilf.R;
 import com.sachin.dmilf.adapters.OnboardingAdapter;
+import com.sachin.dmilf.utils.LocaleHelper;
 
 
 public class OnboardingActivity extends AppCompatActivity {
@@ -118,4 +120,9 @@ public class OnboardingActivity extends AppCompatActivity {
 
         }
     };
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(LocaleHelper.onAttach(newBase));
+    }
 }

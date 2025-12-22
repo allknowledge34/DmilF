@@ -1,5 +1,6 @@
 package com.sachin.dmilf.views.activites;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -12,6 +13,7 @@ import androidx.lifecycle.ViewModelProvider;
 import com.sachin.dmilf.R;
 import com.sachin.dmilf.databinding.ActivityMainBinding;
 import com.sachin.dmilf.utils.Constants;
+import com.sachin.dmilf.utils.LocaleHelper;
 import com.sachin.dmilf.viewmodels.MainViewModel;
 import com.sachin.dmilf.views.fragments.ChatbotFragment;
 import com.sachin.dmilf.views.fragments.ProfileFragment;
@@ -81,5 +83,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void getTransactions() {
         viewModel.getTransactions(calendar);
+    }
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(LocaleHelper.onAttach(newBase));
     }
 }

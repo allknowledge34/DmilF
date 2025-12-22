@@ -1,5 +1,6 @@
 package com.sachin.dmilf.views.activites;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -8,6 +9,7 @@ import android.view.WindowManager;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.sachin.dmilf.R;
+import com.sachin.dmilf.utils.LocaleHelper;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -38,5 +40,10 @@ public class SplashScreenActivity extends AppCompatActivity {
                 });
             }
         },500);
+    }
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(LocaleHelper.onAttach(newBase));
     }
 }

@@ -1,11 +1,13 @@
 package com.sachin.dmilf.views.activites;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.sachin.dmilf.databinding.ActivityNewUpdateBinding;
+import com.sachin.dmilf.utils.LocaleHelper;
 
 public class NewUpdateActivity extends AppCompatActivity {
 
@@ -27,5 +29,10 @@ public class NewUpdateActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(LocaleHelper.onAttach(newBase));
     }
 }
