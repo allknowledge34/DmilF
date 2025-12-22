@@ -16,6 +16,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.ai.client.generativeai.java.ChatFutures;
+import com.sachin.dmilf.R;
 import com.sachin.dmilf.adapters.MessageAdapter;
 import com.sachin.dmilf.databinding.FragmentChatbotBinding;
 import com.sachin.dmilf.models.MessageModel;
@@ -59,21 +60,33 @@ public class ChatbotFragment extends Fragment {
         binding.mic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "coming soon", Toast.LENGTH_SHORT).show();
+                Toast.makeText(
+                        getContext(),
+                        getString(R.string.coming_soon),
+                        Toast.LENGTH_SHORT
+                ).show();
             }
         });
 
         binding.btnHistory.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "coming soon", Toast.LENGTH_SHORT).show();
+                Toast.makeText(
+                        getContext(),
+                        getString(R.string.coming_soon),
+                        Toast.LENGTH_SHORT
+                ).show();
             }
         });
 
         binding.file.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "coming soon", Toast.LENGTH_SHORT).show();
+                Toast.makeText(
+                        getContext(),
+                        getString(R.string.coming_soon),
+                        Toast.LENGTH_SHORT
+                ).show();
             }
         });
 
@@ -105,7 +118,11 @@ public class ChatbotFragment extends Fragment {
                 });
             }
             else {
-                Toast.makeText(getContext(), "write something", Toast.LENGTH_SHORT).show();
+                Toast.makeText(
+                        getContext(),
+                        getString(R.string.write_something),
+                        Toast.LENGTH_SHORT
+                ).show();
             }
         });
 

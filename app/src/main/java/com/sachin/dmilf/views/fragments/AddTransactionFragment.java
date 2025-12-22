@@ -119,20 +119,22 @@ public class AddTransactionFragment extends BottomSheetDialogFragment {
             accountsDialog.setView(dialogBinding.getRoot());
 
             ArrayList<Account> accounts = new ArrayList<>();
-            accounts.add(new Account(0, "Cash"));
-            accounts.add(new Account(0, "Bank"));
-            accounts.add(new Account(0, "Credit Card"));
-            accounts.add(new Account(0, "Digital Wallet"));
-            accounts.add(new Account(0, "UPI"));
-            accounts.add(new Account(0, "EasyPaisa"));
-            accounts.add(new Account(0, "BNPL"));
-            accounts.add(new Account(0, "Gift Card"));
-            accounts.add(new Account(0, "Loan"));
-            accounts.add(new Account(0, "Employer Reimbursement"));
-            accounts.add(new Account(0, "Asset"));
-            accounts.add(new Account(0, "Cash on Delivery"));
-            accounts.add(new Account(0, "Crypto Wallet"));
-            accounts.add(new Account(0, "Other"));
+
+            accounts.add(new Account(0, requireContext().getString(R.string.acc_cash)));
+            accounts.add(new Account(0, requireContext().getString(R.string.acc_bank)));
+            accounts.add(new Account(0, requireContext().getString(R.string.acc_credit_card)));
+            accounts.add(new Account(0, requireContext().getString(R.string.acc_digital_wallet)));
+            accounts.add(new Account(0, requireContext().getString(R.string.acc_upi)));
+            accounts.add(new Account(0, requireContext().getString(R.string.acc_easypaisa)));
+            accounts.add(new Account(0, requireContext().getString(R.string.acc_bnpl)));
+            accounts.add(new Account(0, requireContext().getString(R.string.acc_gift_card)));
+            accounts.add(new Account(0, requireContext().getString(R.string.acc_loan)));
+            accounts.add(new Account(0, requireContext().getString(R.string.acc_employer_reimbursement)));
+            accounts.add(new Account(0, requireContext().getString(R.string.acc_asset)));
+            accounts.add(new Account(0, requireContext().getString(R.string.acc_cod)));
+            accounts.add(new Account(0, requireContext().getString(R.string.acc_crypto_wallet)));
+            accounts.add(new Account(0, requireContext().getString(R.string.acc_other)));
+
 
             AccountsAdapter adapter = new AccountsAdapter(getContext(), accounts, new AccountsAdapter.AccountClickListener() {
                 @Override
@@ -152,14 +154,22 @@ public class AddTransactionFragment extends BottomSheetDialogFragment {
         binding.saveTransactionBtn.setOnClickListener(c -> {
             String amountStr = binding.amount.getText().toString().trim();
             if (amountStr.isEmpty()) {
-                Toast.makeText(getContext(), "Please select Income or Expense", Toast.LENGTH_SHORT).show();
+                Toast.makeText(
+                        getContext(),
+                        getString(R.string.select_income_expense),
+                        Toast.LENGTH_SHORT
+                ).show();
                 return;
             }
 
             double amount = Double.parseDouble(amountStr);
             String note = binding.note.getText().toString().trim();
             if (transaction.getType() == null) {
-                Toast.makeText(getContext(), "Please select Income or Expense", Toast.LENGTH_SHORT).show();
+                Toast.makeText(
+                        getContext(),
+                        getString(R.string.select_income_expense),
+                        Toast.LENGTH_SHORT
+                ).show();
                 return;
             }
 

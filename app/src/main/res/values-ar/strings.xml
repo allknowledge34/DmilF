@@ -53,7 +53,98 @@
     <string name="general_inquiry">استفسار عام</string>
     <string name="logout">تسجيل الخروج</string>
     <string name="version">الإصدار</string>
-    
+
+    <!-- Onboarding Screen -->
+    <string name="welcome_to_dmilf">مرحبًا بك في DmilF</string>
+    <string name="track_analyze_improve">تتبع • حلل • حسّن</string>
+    <string name="build_better_money_habits">ابنِ عادات مالية أفضل</string>
+    <string name="subtitle1">مساعدك الذكي الشامل للإنفاق الأذكى،\nوالادخار الأفضل، والوضوح المالي الكامل.</string>
+    <string name="subtitle2">افهم نفقاتك من خلال تصاميم واضحة ورؤى ذكية وأنماط إنفاق فورية\nتبقيك دائمًا مسيطرًا.</string>
+    <string name="subtitle3">حدد الميزانيات، كن منظمًا، واتخذ قرارات مالية واثقة\nباستخدام أدوات الدردشة الذكية المدعومة بالذكاء الاصطناعي.</string>
+
+    <!-- Splash Screen -->
+    <string name="splash_screen_title">تطبيق إدارة النفقات\nالمدعوم بالذكاء الاصطناعي</string>
+    <string name="splash_screen_subtitle">تتبع وأدر وحلل أموالك بسهولة\nباستخدام رؤى مدعومة بالذكاء الاصطناعي</string>
+
+    <!-- Home Screen -->
+    <string name="income">الدخل</string>
+    <string name="expense">المصروفات</string>
+    <string name="total">الإجمالي</string>
+    <string name="daily">يومي</string>
+    <string name="monthly">شهري</string>
+    <string name="calendar">التقويم</string>
+    <string name="summary">الملخص</string>
+    <string name="notes">ملاحظات</string>
+    <string name="transactions">المعاملات</string>
+
+    <!-- Chatbot -->
+    <string name="chatbot">روبوت الدردشة</string>
+    <string name="message_hint">اكتب رسالة…</string>
+
+    <!-- Add Transaction -->
+    <string name="select_date">اختر التاريخ</string>
+    <string name="amount">المبلغ</string>
+    <string name="category">الفئة</string>
+    <string name="account">الحساب</string>
+    <string name="note">ملاحظة</string>
+    <string name="save_transaction">حفظ المعاملة</string>
+
+    <!-- Accounts -->
+    <string name="acc_cash">نقدًا</string>
+    <string name="acc_bank">بنك</string>
+    <string name="acc_credit_card">بطاقة ائتمان</string>
+    <string name="acc_digital_wallet">محفظة رقمية</string>
+    <string name="acc_upi">UPI</string>
+    <string name="acc_easypaisa">إيزي بايسا</string>
+    <string name="acc_bnpl">اشترِ الآن وادفع لاحقًا</string>
+    <string name="acc_gift_card">بطاقة هدايا</string>
+    <string name="acc_loan">قرض</string>
+    <string name="acc_employer_reimbursement">تعويض صاحب العمل</string>
+    <string name="acc_asset">أصل</string>
+    <string name="acc_cod">الدفع عند الاستلام</string>
+    <string name="acc_crypto_wallet">محفظة العملات الرقمية</string>
+    <string name="acc_other">أخرى</string>
+
+    <!-- Categories -->
+    <string name="cat_salary">الراتب</string>
+    <string name="cat_business">الأعمال</string>
+    <string name="cat_freelance">عمل حر</string>
+    <string name="cat_investment">استثمار</string>
+    <string name="cat_interest">فائدة</string>
+    <string name="cat_refund">استرداد</string>
+    <string name="cat_dining_out">تناول الطعام خارجًا</string>
+    <string name="cat_rent">الإيجار</string>
+    <string name="cat_utilities">المرافق</string>
+    <string name="cat_internet">الإنترنت</string>
+    <string name="cat_transport">المواصلات</string>
+    <string name="cat_ride">رحلة</string>
+    <string name="cat_vehicle_maint">صيانة المركبة</string>
+    <string name="cat_shopping">التسوق</string>
+    <string name="cat_subscriptions">الاشتراكات</string>
+    <string name="cat_health">الصحة</string>
+    <string name="cat_education">التعليم</string>
+    <string name="cat_gift">هدية</string>
+    <string name="cat_cash_withdrawal">سحب نقدي</string>
+    <string name="cat_other">أخرى</string>
+
+    <!-- Validation Messages -->
+    <string name="select_income_expense">يرجى اختيار الدخل أو المصروف</string>
+    <string name="write_something">يرجى كتابة شيء</string>
+
+    <!-- Delete Transaction Dialog -->
+    <string name="delete_transaction">حذف المعاملة</string>
+    <string name="delete_transaction_msg">هل أنت متأكد أنك تريد حذف هذه المعاملة؟</string>
+
+    <!-- Bottom Navigation -->
+    <string name="nav_home">الرئيسية</string>
+    <string name="nav_stats">الإحصائيات</string>
+    <string name="nav_chatbot">روبوت الدردشة</string>
+    <string name="nav_profile">الملف الشخصي</string>
+
+
+
+
+
     <!-- Common UI Elements -->
     <string name="done">تم</string>
     <string name="back">رجوع</string>

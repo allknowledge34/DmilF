@@ -53,7 +53,96 @@
     <string name="general_inquiry">一般咨询</string>
     <string name="logout">退出登录</string>
     <string name="version">版本</string>
-    
+
+    <!-- Onboarding Screen -->
+    <string name="welcome_to_dmilf">欢迎使用 DmilF</string>
+    <string name="track_analyze_improve">记录 • 分析 • 提升</string>
+    <string name="build_better_money_habits">养成更好的理财习惯</string>
+    <string name="subtitle1">您的一站式 AI 助手，帮助您更聪明地消费，\n更好地储蓄，实现全面的财务清晰度。</string>
+    <string name="subtitle2">通过清晰的可视化、智能洞察和实时消费模式\n轻松了解并掌控您的支出。</string>
+    <string name="subtitle3">设置预算，保持有序，\n借助强大的 AI 聊天机器人工具自信地做出财务决策。</string>
+
+    <!-- Splash Screen -->
+    <string name="splash_screen_title">AI 驱动的支出\n管理应用</string>
+    <string name="splash_screen_subtitle">借助 AI 智能洞察\n轻松追踪、管理和分析您的财务状况</string>
+
+    <!-- Home Screen -->
+    <string name="income">收入</string>
+    <string name="expense">支出</string>
+    <string name="total">总计</string>
+    <string name="daily">每日</string>
+    <string name="monthly">每月</string>
+    <string name="calendar">日历</string>
+    <string name="summary">汇总</string>
+    <string name="notes">备注</string>
+    <string name="transactions">交易记录</string>
+
+    <!-- Chatbot -->
+    <string name="chatbot">聊天机器人</string>
+    <string name="message_hint">输入消息…</string>
+
+    <!-- Add Transaction -->
+    <string name="select_date">选择日期</string>
+    <string name="amount">金额</string>
+    <string name="category">类别</string>
+    <string name="account">账户</string>
+    <string name="note">备注</string>
+    <string name="save_transaction">保存交易</string>
+
+    <!-- Accounts -->
+    <string name="acc_cash">现金</string>
+    <string name="acc_bank">银行</string>
+    <string name="acc_credit_card">信用卡</string>
+    <string name="acc_digital_wallet">数字钱包</string>
+    <string name="acc_upi">UPI</string>
+    <string name="acc_easypaisa">EasyPaisa</string>
+    <string name="acc_bnpl">先买后付</string>
+    <string name="acc_gift_card">礼品卡</string>
+    <string name="acc_loan">贷款</string>
+    <string name="acc_employer_reimbursement">雇主报销</string>
+    <string name="acc_asset">资产</string>
+    <string name="acc_cod">货到付款</string>
+    <string name="acc_crypto_wallet">加密钱包</string>
+    <string name="acc_other">其他</string>
+
+    <!-- Categories -->
+    <string name="cat_salary">工资</string>
+    <string name="cat_business">商业</string>
+    <string name="cat_freelance">自由职业</string>
+    <string name="cat_investment">投资</string>
+    <string name="cat_interest">利息</string>
+    <string name="cat_refund">退款</string>
+    <string name="cat_dining_out">外出就餐</string>
+    <string name="cat_rent">房租</string>
+    <string name="cat_utilities">公共事业费</string>
+    <string name="cat_internet">互联网</string>
+    <string name="cat_transport">交通</string>
+    <string name="cat_ride">出行</string>
+    <string name="cat_vehicle_maint">车辆维护</string>
+    <string name="cat_shopping">购物</string>
+    <string name="cat_subscriptions">订阅</string>
+    <string name="cat_health">健康</string>
+    <string name="cat_education">教育</string>
+    <string name="cat_gift">礼物</string>
+    <string name="cat_cash_withdrawal">现金取款</string>
+    <string name="cat_other">其他</string>
+
+    <!-- Validation Messages -->
+    <string name="select_income_expense">请选择收入或支出</string>
+    <string name="write_something">请输入内容</string>
+
+    <!-- Delete Transaction Dialog -->
+    <string name="delete_transaction">删除交易</string>
+    <string name="delete_transaction_msg">您确定要删除此交易吗？</string>
+
+    <!-- Bottom Navigation -->
+    <string name="nav_home">首页</string>
+    <string name="nav_stats">统计</string>
+    <string name="nav_chatbot">聊天机器人</string>
+    <string name="nav_profile">个人资料</string>
+
+
+
     <!-- Common UI Elements -->
     <string name="done">完成</string>
     <string name="back">返回</string>

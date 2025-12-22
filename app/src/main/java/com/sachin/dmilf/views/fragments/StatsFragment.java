@@ -107,25 +107,28 @@ public class StatsFragment extends Fragment {
         binding.tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
-                if(tab.getText().equals("Monthly")) {
-                    Constants.SELECTED_TAB_STATS = 1;
-                    updateDate();
-                } else if(tab.getText().equals("Daily")) {
-                    Constants.SELECTED_TAB_STATS = 0;
-                    updateDate();
+
+                switch (tab.getPosition()) {
+
+                    case 0:
+                        Constants.SELECTED_TAB_STATS = 0;
+                        updateDate();
+                        break;
+
+                    case 1:
+                        Constants.SELECTED_TAB_STATS = 1;
+                        updateDate();
+                        break;
                 }
             }
 
             @Override
-            public void onTabUnselected(TabLayout.Tab tab) {
-
-            }
+            public void onTabUnselected(TabLayout.Tab tab) {}
 
             @Override
-            public void onTabReselected(TabLayout.Tab tab) {
-
-            }
+            public void onTabReselected(TabLayout.Tab tab) {}
         });
+
 
 
         Pie pie = AnyChart.pie();

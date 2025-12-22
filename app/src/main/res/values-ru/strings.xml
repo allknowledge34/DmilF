@@ -53,7 +53,96 @@
     <string name="general_inquiry">Общий Запрос</string>
     <string name="logout">Выйти</string>
     <string name="version">Версия</string>
-    
+
+    <!-- Onboarding Screen -->
+    <string name="welcome_to_dmilf">Добро пожаловать в DmilF</string>
+    <string name="track_analyze_improve">Отслеживай • Анализируй • Улучшай</string>
+    <string name="build_better_money_habits">Формируйте лучшие финансовые привычки</string>
+    <string name="subtitle1">Ваш универсальный AI-помощник для разумных трат,\nлучших сбережений и полной финансовой ясности.</string>
+    <string name="subtitle2">Понимайте свои расходы с помощью наглядных визуализаций, умных аналитических данных и расходов в реальном времени,\nкоторые держат вас под контролем.</string>
+    <string name="subtitle3">Устанавливайте бюджеты, оставайтесь организованными и принимайте уверенные финансовые решения\nс мощными AI-чатбот инструментами.</string>
+
+    <!-- Splash Screen -->
+    <string name="splash_screen_title">Приложение для управления\nрасходами с ИИ</string>
+    <string name="splash_screen_subtitle">Легко отслеживайте, управляйте и анализируйте свои финансы\nс помощью AI-аналитики</string>
+
+    <!-- Home Screen -->
+    <string name="income">Доход</string>
+    <string name="expense">Расходы</string>
+    <string name="total">Итого</string>
+    <string name="daily">Ежедневно</string>
+    <string name="monthly">Ежемесячно</string>
+    <string name="calendar">Календарь</string>
+    <string name="summary">Сводка</string>
+    <string name="notes">Заметки</string>
+    <string name="transactions">Транзакции</string>
+
+    <!-- Chatbot -->
+    <string name="chatbot">Чат-бот</string>
+    <string name="message_hint">Введите сообщение…</string>
+
+    <!-- Add Transaction -->
+    <string name="select_date">Выбрать дату</string>
+    <string name="amount">Сумма</string>
+    <string name="category">Категория</string>
+    <string name="account">Счёт</string>
+    <string name="note">Заметка</string>
+    <string name="save_transaction">Сохранить транзакцию</string>
+
+    <!-- Accounts -->
+    <string name="acc_cash">Наличные</string>
+    <string name="acc_bank">Банк</string>
+    <string name="acc_credit_card">Кредитная карта</string>
+    <string name="acc_digital_wallet">Цифровой кошелек</string>
+    <string name="acc_upi">UPI</string>
+    <string name="acc_easypaisa">EasyPaisa</string>
+    <string name="acc_bnpl">Купи сейчас — плати позже</string>
+    <string name="acc_gift_card">Подарочная карта</string>
+    <string name="acc_loan">Кредит</string>
+    <string name="acc_employer_reimbursement">Возмещение работодателя</string>
+    <string name="acc_asset">Актив</string>
+    <string name="acc_cod">Оплата при доставке</string>
+    <string name="acc_crypto_wallet">Криптокошелек</string>
+    <string name="acc_other">Другое</string>
+
+    <!-- Categories -->
+    <string name="cat_salary">Зарплата</string>
+    <string name="cat_business">Бизнес</string>
+    <string name="cat_freelance">Фриланс</string>
+    <string name="cat_investment">Инвестиции</string>
+    <string name="cat_interest">Проценты</string>
+    <string name="cat_refund">Возврат</string>
+    <string name="cat_dining_out">Питание вне дома</string>
+    <string name="cat_rent">Аренда</string>
+    <string name="cat_utilities">Коммунальные услуги</string>
+    <string name="cat_internet">Интернет</string>
+    <string name="cat_transport">Транспорт</string>
+    <string name="cat_ride">Поездка</string>
+    <string name="cat_vehicle_maint">Обслуживание автомобиля</string>
+    <string name="cat_shopping">Покупки</string>
+    <string name="cat_subscriptions">Подписки</string>
+    <string name="cat_health">Здоровье</string>
+    <string name="cat_education">Образование</string>
+    <string name="cat_gift">Подарок</string>
+    <string name="cat_cash_withdrawal">Снятие наличных</string>
+    <string name="cat_other">Другое</string>
+
+    <!-- Validation Messages -->
+    <string name="select_income_expense">Пожалуйста, выберите доход или расход</string>
+    <string name="write_something">Пожалуйста, напишите что-нибудь</string>
+
+    <!-- Delete Transaction Dialog -->
+    <string name="delete_transaction">Удалить транзакцию</string>
+    <string name="delete_transaction_msg">Вы уверены, что хотите удалить эту транзакцию?</string>
+
+    <!-- Bottom Navigation -->
+    <string name="nav_home">Главная</string>
+    <string name="nav_stats">Статистика</string>
+    <string name="nav_chatbot">Чат-бот</string>
+    <string name="nav_profile">Профиль</string>
+
+
+
     <!-- Common UI Elements -->
     <string name="done">Готово</string>
     <string name="back">Назад</string>

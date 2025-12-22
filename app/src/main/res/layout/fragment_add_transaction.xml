@@ -30,7 +30,7 @@
                     android:background="@drawable/default_selector"
                     android:gravity="center"
                     android:padding="12dp"
-                    android:text="Income" />
+                    android:text="@string/income" />
 
                 <TextView
                     android:id="@+id/expenseBtn"
@@ -41,7 +41,7 @@
                     android:background="@drawable/default_selector"
                     android:gravity="center"
                     android:padding="12dp"
-                    android:text="Expense" />
+                    android:text="@string/expense" />
             </LinearLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -54,7 +54,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:focusable="false"
-                    android:hint="Select Date" />
+                    android:hint="@string/select_date" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -66,7 +66,7 @@
                     android:id="@+id/amount"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Amount"
+                    android:hint="@string/amount"
                     android:inputType="number" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -81,7 +81,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:focusable="false"
-                    android:hint="Category" />
+                    android:hint="@string/category" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -95,7 +95,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:focusable="false"
-                    android:hint="Account" />
+                    android:hint="@string/account" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -107,7 +107,7 @@
                     android:id="@+id/note"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Note" />
+                    android:hint="@string/notes" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <androidx.appcompat.widget.AppCompatButton
@@ -118,7 +118,7 @@
                 android:gravity="center"
                 android:textColor="@color/white"
                 android:background="@drawable/card_background"
-                android:text="Save Transaction"
+                android:text="@string/save_transaction"
                 app:cornerRadius="3dp" />
 
         </LinearLayout>

@@ -13,33 +13,33 @@ import androidx.viewpager.widget.PagerAdapter;
 
 import com.sachin.dmilf.R;
 
-
 public class OnboardingAdapter extends PagerAdapter {
 
-    Context context;
-    LayoutInflater layoutInflater;
-
-    public OnboardingAdapter(Context context) {
-        this.context = context;
-    }
-
-    String titles[] = {
-            "Welcome to DmilF",
-            "Track • Analyze • Improve",
-            "Build Better Money Habits"
-    };
-
-    String subtitles[] ={
-            "Your all-in-one AI companion for smarter spending,\nbetter savings, and complete financial clarity." ,
-            "Understand your expenses with clean visuals, smart insights, and real-time spending patterns\nthat keep you in control.",
-            "Set budgets, stay organized, and make confident \nfinancial decisions with powerful AI-Chatbot tools."
-    };
+    private final Context context;
+    private final String[] titles;
+    private final String[] subtitles;
 
     int images[] = {
             R.drawable.bg_1,
             R.drawable.bg_2,
             R.drawable.bg_3
     };
+
+    public OnboardingAdapter(@NonNull Context context) {
+        this.context = context;
+
+        titles = new String[]{
+                context.getString(R.string.welcome_to_dmilf),
+                context.getString(R.string.track_analyze_improve),
+                context.getString(R.string.build_better_money_habits)
+        };
+
+        subtitles = new String[]{
+                context.getString(R.string.subtitle1),
+                context.getString(R.string.subtitle2),
+                context.getString(R.string.subtitle3)
+        };
+    }
 
     @Override
     public int getCount() {
@@ -48,32 +48,29 @@ public class OnboardingAdapter extends PagerAdapter {
 
     @Override
     public boolean isViewFromObject(@NonNull View view, @NonNull Object object) {
-        return view == (ConstraintLayout) object;
+        return view == object;
     }
 
     @NonNull
     @Override
     public Object instantiateItem(@NonNull ViewGroup container, int position) {
-        layoutInflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
-        View v = layoutInflater.inflate(R.layout.slide, container, false);
+        View view = LayoutInflater.from(context)
+                .inflate(R.layout.slide, container, false);
 
-        ImageView image = v.findViewById(R.id.slideImg);
-        TextView title = v.findViewById(R.id.sliderTitle);
-        TextView subtitle = v.findViewById(R.id.sliderSubTitle);
+        ImageView image = view.findViewById(R.id.slideImg);
+        TextView title = view.findViewById(R.id.sliderTitle);
+        TextView subtitle = view.findViewById(R.id.sliderSubTitle);
 
         image.setImageResource(images[position]);
         title.setText(titles[position]);
         subtitle.setText(subtitles[position]);
 
-        container.addView(v);
-
-        return v;
-
+        container.addView(view);
+        return view;
     }
 
     @Override
     public void destroyItem(@NonNull ViewGroup container, int position, @NonNull Object object) {
-        container.removeView((ConstraintLayout) object);
+        container.removeView((View) object);
     }
 }
-

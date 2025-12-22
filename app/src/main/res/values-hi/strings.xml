@@ -53,7 +53,96 @@
     <string name="general_inquiry">सामान्य पूछताछ</string>
     <string name="logout">लॉग आउट</string>
     <string name="version">संस्करण</string>
-    
+
+    <!-- Onboarding Screen -->
+    <string name="welcome_to_dmilf">DmilF में आपका स्वागत है</string>
+    <string name="track_analyze_improve">ट्रैक करें • विश्लेषण करें • सुधार करें</string>
+    <string name="build_better_money_habits">बेहतर धन आदतें बनाएं</string>
+    <string name="subtitle1">स्मार्ट खर्च, बेहतर बचत और\nपूरी वित्तीय स्पष्टता के लिए आपका ऑल-इन-वन AI साथी।</string>
+    <string name="subtitle2">साफ विज़ुअल्स, स्मार्ट इनसाइट्स और रियल-टाइम खर्च पैटर्न के साथ\nअपने खर्च को आसानी से समझें और नियंत्रित रखें।</string>
+    <string name="subtitle3">बजट सेट करें, व्यवस्थित रहें और\nशक्तिशाली AI-चैटबॉट टूल्स के साथ आत्मविश्वास से वित्तीय निर्णय लें।</string>
+
+    <!-- Splash Screen -->
+    <string name="splash_screen_title">AI-संचालित खर्च\nप्रबंधन ऐप</string>
+    <string name="splash_screen_subtitle">AI आधारित इनसाइट्स के साथ\nअपने वित्त को आसानी से ट्रैक, प्रबंधित और विश्लेषण करें</string>
+
+    <!-- Home Screen -->
+    <string name="income">आय</string>
+    <string name="expense">खर्च</string>
+    <string name="total">कुल</string>
+    <string name="daily">दैनिक</string>
+    <string name="monthly">मासिक</string>
+    <string name="calendar">कैलेंडर</string>
+    <string name="summary">सारांश</string>
+    <string name="notes">नोट्स</string>
+    <string name="transactions">लेन-देन</string>
+
+    <!-- Chatbot -->
+    <string name="chatbot">चैटबॉट</string>
+    <string name="message_hint">संदेश लिखें…</string>
+
+    <!-- Add Transaction -->
+    <string name="select_date">तारीख चुनें</string>
+    <string name="amount">राशि</string>
+    <string name="category">श्रेणी</string>
+    <string name="account">खाता</string>
+    <string name="note">नोट</string>
+    <string name="save_transaction">लेन-देन सहेजें</string>
+
+    <!-- Accounts -->
+    <string name="acc_cash">नकद</string>
+    <string name="acc_bank">बैंक</string>
+    <string name="acc_credit_card">क्रेडिट कार्ड</string>
+    <string name="acc_digital_wallet">डिजिटल वॉलेट</string>
+    <string name="acc_upi">यूपीआई</string>
+    <string name="acc_easypaisa">ईज़ीपैसा</string>
+    <string name="acc_bnpl">बाद में भुगतान</string>
+    <string name="acc_gift_card">गिफ्ट कार्ड</string>
+    <string name="acc_loan">ऋण</string>
+    <string name="acc_employer_reimbursement">नियोक्ता प्रतिपूर्ति</string>
+    <string name="acc_asset">संपत्ति</string>
+    <string name="acc_cod">डिलीवरी पर नकद</string>
+    <string name="acc_crypto_wallet">क्रिप्टो वॉलेट</string>
+    <string name="acc_other">अन्य</string>
+
+    <!-- Categories -->
+    <string name="cat_salary">वेतन</string>
+    <string name="cat_business">व्यवसाय</string>
+    <string name="cat_freelance">फ्रीलांस</string>
+    <string name="cat_investment">निवेश</string>
+    <string name="cat_interest">ब्याज</string>
+    <string name="cat_refund">रिफंड</string>
+    <string name="cat_dining_out">बाहर खाना</string>
+    <string name="cat_rent">किराया</string>
+    <string name="cat_utilities">उपयोगिताएँ</string>
+    <string name="cat_internet">इंटरनेट</string>
+    <string name="cat_transport">परिवहन</string>
+    <string name="cat_ride">सवारी</string>
+    <string name="cat_vehicle_maint">वाहन रखरखाव</string>
+    <string name="cat_shopping">खरीदारी</string>
+    <string name="cat_subscriptions">सदस्यताएँ</string>
+    <string name="cat_health">स्वास्थ्य</string>
+    <string name="cat_education">शिक्षा</string>
+    <string name="cat_gift">उपहार</string>
+    <string name="cat_cash_withdrawal">नकद निकासी</string>
+    <string name="cat_other">अन्य</string>
+
+    <!-- Validation Messages -->
+    <string name="select_income_expense">कृपया आय या खर्च चुनें</string>
+    <string name="write_something">कृपया कुछ लिखें</string>
+
+    <!-- Delete Transaction Dialog -->
+    <string name="delete_transaction">लेन-देन हटाएँ</string>
+    <string name="delete_transaction_msg">क्या आप वाकई इस लेन-देन को हटाना चाहते हैं?</string>
+
+    <!-- Bottom Navigation -->
+    <string name="nav_home">होम</string>
+    <string name="nav_stats">आँकड़े</string>
+    <string name="nav_chatbot">चैटबॉट</string>
+    <string name="nav_profile">प्रोफ़ाइल</string>
+
+
+
     <!-- Common UI Elements -->
     <string name="done">पूर्ण</string>
     <string name="back">वापस</string>

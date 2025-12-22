@@ -7,6 +7,7 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
+        android:name=".views.activites.UpdateApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -15,9 +16,6 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.DmilF">
-        <activity
-            android:name=".views.activites.UpdateApplication"
-            android:exported="false" />
         <activity
             android:name=".views.activites.SplashScreenActivity"
             android:exported="true">

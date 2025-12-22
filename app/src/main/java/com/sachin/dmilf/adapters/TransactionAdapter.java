@@ -92,18 +92,34 @@ public class TransactionAdapter extends RecyclerView.Adapter<TransactionAdapter.
         }
 
         holder.itemView.setOnLongClickListener(view -> {
-            AlertDialog deleteDialog = new AlertDialog.Builder(view.getContext()).create();
-            deleteDialog.setTitle("Delete Transaction");
-            deleteDialog.setMessage("Are you sure you want to delete this transaction?");
-            deleteDialog.setButton(Dialog.BUTTON_POSITIVE, "Yes", (dialogInterface, i) -> {
-                if (deleteListener != null) {
-                    deleteListener.onDeleteTransaction(transaction);
-                }
-            });
-            deleteDialog.setButton(Dialog.BUTTON_NEGATIVE, "No", (dialogInterface, i) -> deleteDialog.dismiss());
+
+            Context context = view.getContext();
+
+            AlertDialog deleteDialog = new AlertDialog.Builder(context).create();
+
+            deleteDialog.setTitle(context.getString(R.string.delete_transaction));
+            deleteDialog.setMessage(context.getString(R.string.delete_transaction_msg));
+
+            deleteDialog.setButton(
+                    Dialog.BUTTON_POSITIVE,
+                    context.getString(R.string.yes),
+                    (dialogInterface, i) -> {
+                        if (deleteListener != null) {
+                            deleteListener.onDeleteTransaction(transaction);
+                        }
+                    }
+            );
+
+            deleteDialog.setButton(
+                    Dialog.BUTTON_NEGATIVE,
+                    context.getString(R.string.no),
+                    (dialogInterface, i) -> deleteDialog.dismiss()
+            );
+
             deleteDialog.show();
             return true;
         });
+
     }
 
     @Override

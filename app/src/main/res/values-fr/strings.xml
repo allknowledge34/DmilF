@@ -53,7 +53,95 @@
     <string name="general_inquiry">Demande Générale</string>
     <string name="logout">Se Déconnecter</string>
     <string name="version">Version</string>
-    
+
+    <!-- Onboarding Screen -->
+    <string name="welcome_to_dmilf">Bienvenue sur DmilF</string>
+    <string name="track_analyze_improve">Suivre • Analyser • Améliorer</string>
+    <string name="build_better_money_habits">Adoptez de meilleures habitudes financières</string>
+    <string name="subtitle1">Votre compagnon IA tout-en-un pour des dépenses plus intelligentes,\nde meilleures économies et une clarté financière totale.</string>
+    <string name="subtitle2">Comprenez vos dépenses grâce à des visuels clairs, des analyses intelligentes et des tendances en temps réel\nqui vous gardent maître de votre budget.</string>
+    <string name="subtitle3">Fixez des budgets, restez organisé et prenez des décisions financières sûres\navec de puissants outils de chatbot IA.</string>
+
+    <!-- Splash Screen -->
+    <string name="splash_screen_title">Application de gestion\ndes dépenses avec IA</string>
+    <string name="splash_screen_subtitle">Suivez, gérez et analysez vos finances facilement\navec des analyses basées sur l’IA</string>
+
+    <!-- Home Screen -->
+    <string name="income">Revenus</string>
+    <string name="expense">Dépenses</string>
+    <string name="total">Total</string>
+    <string name="daily">Quotidien</string>
+    <string name="monthly">Mensuel</string>
+    <string name="calendar">Calendrier</string>
+    <string name="summary">Résumé</string>
+    <string name="notes">Notes</string>
+    <string name="transactions">Transactions</string>
+
+    <!-- Chatbot -->
+    <string name="chatbot">Chatbot</string>
+    <string name="message_hint">Écrire un message…</string>
+
+    <!-- Add Transaction -->
+    <string name="select_date">Sélectionner la date</string>
+    <string name="amount">Montant</string>
+    <string name="category">Catégorie</string>
+    <string name="account">Compte</string>
+    <string name="note">Note</string>
+    <string name="save_transaction">Enregistrer la transaction</string>
+
+    <!-- Accounts -->
+    <string name="acc_cash">Espèces</string>
+    <string name="acc_bank">Banque</string>
+    <string name="acc_credit_card">Carte de crédit</string>
+    <string name="acc_digital_wallet">Portefeuille numérique</string>
+    <string name="acc_upi">UPI</string>
+    <string name="acc_easypaisa">EasyPaisa</string>
+    <string name="acc_bnpl">Acheter maintenant, payer plus tard</string>
+    <string name="acc_gift_card">Carte cadeau</string>
+    <string name="acc_loan">Prêt</string>
+    <string name="acc_employer_reimbursement">Remboursement employeur</string>
+    <string name="acc_asset">Actif</string>
+    <string name="acc_cod">Paiement à la livraison</string>
+    <string name="acc_crypto_wallet">Portefeuille crypto</string>
+    <string name="acc_other">Autre</string>
+
+    <!-- Categories -->
+    <string name="cat_salary">Salaire</string>
+    <string name="cat_business">Entreprise</string>
+    <string name="cat_freelance">Freelance</string>
+    <string name="cat_investment">Investissement</string>
+    <string name="cat_interest">Intérêt</string>
+    <string name="cat_refund">Remboursement</string>
+    <string name="cat_dining_out">Repas à l’extérieur</string>
+    <string name="cat_rent">Loyer</string>
+    <string name="cat_utilities">Services publics</string>
+    <string name="cat_internet">Internet</string>
+    <string name="cat_transport">Transport</string>
+    <string name="cat_ride">Trajet</string>
+    <string name="cat_vehicle_maint">Entretien du véhicule</string>
+    <string name="cat_shopping">Achats</string>
+    <string name="cat_subscriptions">Abonnements</string>
+    <string name="cat_health">Santé</string>
+    <string name="cat_education">Éducation</string>
+    <string name="cat_gift">Cadeau</string>
+    <string name="cat_cash_withdrawal">Retrait d’espèces</string>
+    <string name="cat_other">Autre</string>
+
+    <!-- Validation Messages -->
+    <string name="select_income_expense">Veuillez sélectionner Revenus ou Dépenses</string>
+    <string name="write_something">Veuillez écrire quelque chose</string>
+
+    <!-- Bottom Navigation -->
+    <string name="nav_home">Accueil</string>
+    <string name="nav_stats">Statistiques</string>
+    <string name="nav_chatbot">Chatbot</string>
+    <string name="nav_profile">Profil</string>
+
+
+    <!-- Delete Transaction Dialog -->
+    <string name="delete_transaction">Supprimer la transaction</string>
+    <string name="delete_transaction_msg">Êtes-vous sûr de vouloir supprimer cette transaction ?</string>
+
     <!-- Common UI Elements -->
     <string name="done">Terminé</string>
     <string name="back">Retour</string>

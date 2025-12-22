@@ -54,6 +54,96 @@
     <string name="logout">Logout</string>
     <string name="version">Version</string>
 
+    <!-- Onboarding Screen -->
+    <string name="welcome_to_dmilf">Welcome to DmilF</string>
+    <string name="track_analyze_improve">Track • Analyze • Improve</string>
+    <string name="build_better_money_habits">Build Better Money Habits</string>
+    <string name="subtitle1">Your all-in-one AI companion for smarter spending,\nbetter savings, and complete financial clarity.</string>
+    <string name="subtitle2">Understand your expenses with clean visuals, smart insights, and real-time spending patterns\nthat keep you in control.</string>
+    <string name="subtitle3">Set budgets, stay organized, and make confident\nfinancial decisions with powerful AI-Chatbot tools.</string>
+
+    <!-- Splash Screen -->
+    <string name="splash_screen_title">AI-Powered Expense\nManager App</string>
+    <string name="splash_screen_subtitle">Track, manage, and analyze your finances\neffortlessly with AI-driven insights</string>
+
+    <!-- Home Screen -->
+    <string name="income">Income</string>
+    <string name="expense">Expense</string>
+    <string name="total">Total</string>
+    <string name="daily">Daily</string>
+    <string name="monthly">Monthly</string>
+    <string name="calendar">Calendar</string>
+    <string name="summary">Summary</string>
+    <string name="notes">Notes</string>
+    <string name="transactions">Transactions</string>
+
+    <!-- Chatbot -->
+    <string name="chatbot">Chatbot</string>
+    <string name="message_hint">Message…</string>
+
+    <!-- Add Transaction -->
+    <string name="select_date">Select Date</string>
+    <string name="amount">Amount</string>
+    <string name="category">Category</string>
+    <string name="account">Account</string>
+    <string name="note">Note</string>
+    <string name="save_transaction">Save Transaction</string>
+
+    <!-- Accounts -->
+    <string name="acc_cash">Cash</string>
+    <string name="acc_bank">Bank</string>
+    <string name="acc_credit_card">Credit Card</string>
+    <string name="acc_digital_wallet">Digital Wallet</string>
+    <string name="acc_upi">UPI</string>
+    <string name="acc_easypaisa">EasyPaisa</string>
+    <string name="acc_bnpl">BNPL</string>
+    <string name="acc_gift_card">Gift Card</string>
+    <string name="acc_loan">Loan</string>
+    <string name="acc_employer_reimbursement">Employer Reimbursement</string>
+    <string name="acc_asset">Asset</string>
+    <string name="acc_cod">Cash on Delivery</string>
+    <string name="acc_crypto_wallet">Crypto Wallet</string>
+    <string name="acc_other">Other</string>
+
+    <!-- Categories -->
+    <string name="cat_salary">Salary</string>
+    <string name="cat_business">Business</string>
+    <string name="cat_freelance">Freelance</string>
+    <string name="cat_investment">Investment</string>
+    <string name="cat_interest">Interest</string>
+    <string name="cat_refund">Refund</string>
+    <string name="cat_dining_out">Dining Out</string>
+    <string name="cat_rent">Rent</string>
+    <string name="cat_utilities">Utilities</string>
+    <string name="cat_internet">Internet</string>
+    <string name="cat_transport">Transport</string>
+    <string name="cat_ride">Ride</string>
+    <string name="cat_vehicle_maint">Vehicle Maintenance</string>
+    <string name="cat_shopping">Shopping</string>
+    <string name="cat_subscriptions">Subscriptions</string>
+    <string name="cat_health">Health</string>
+    <string name="cat_education">Education</string>
+    <string name="cat_gift">Gift</string>
+    <string name="cat_cash_withdrawal">Cash Withdrawal</string>
+    <string name="cat_other">Other</string>
+
+    <!-- Validation Messages -->
+    <string name="select_income_expense">Please select Income or Expense</string>
+    <string name="write_something">Please write something</string>
+
+    <!-- Delete Transaction Dialog -->
+    <string name="delete_transaction">Delete Transaction</string>
+    <string name="delete_transaction_msg">Are you sure you want to delete this transaction?</string>
+
+    <!-- Bottom Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_stats">Stats</string>
+    <string name="nav_chatbot">Chatbot</string>
+    <string name="nav_profile">Profile</string>
+
+
+
+
     <!-- Common UI Elements -->
     <string name="done">Done</string>
     <string name="back">Back</string>

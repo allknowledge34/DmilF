@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
         viewModel = new ViewModelProvider(this).get(MainViewModel.class);
 
-        Constants.setCategories();
+        Constants.setCategories(this);
         calendar = Calendar.getInstance();
         loadFragment(new TransactionsFragment());
         binding.bottomBar.setOnTabSelectListener(new AnimatedBottomBar.OnTabSelectListener() {

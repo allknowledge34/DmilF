@@ -87,31 +87,52 @@ public class TransactionsFragment extends Fragment {
         binding.tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
-                if ("Monthly".contentEquals(tab.getText())) {
-                    Constants.SELECTED_TAB = Constants.MONTHLY;
-                    updateDate();
-                } else if ("Daily".contentEquals(tab.getText())) {
-                    Constants.SELECTED_TAB = Constants.DAILY;
-                    updateDate();
-                } else if ("Calendar".contentEquals(tab.getText())) {
-                    Toast.makeText(getContext(), "coming soon", Toast.LENGTH_SHORT).show();
-                } else if ("Summary".contentEquals(tab.getText())) {
-                    Toast.makeText(getContext(), "coming soon", Toast.LENGTH_SHORT).show();
-                } else if ("Notes".contentEquals(tab.getText())) {
-                    Toast.makeText(getContext(), "coming soon", Toast.LENGTH_SHORT).show();
+
+                switch (tab.getPosition()) {
+
+                    case 0:
+                        Constants.SELECTED_TAB = Constants.DAILY;
+                        updateDate();
+                        break;
+
+                    case 1:
+                        Constants.SELECTED_TAB = Constants.MONTHLY;
+                        updateDate();
+                        break;
+
+                    case 2:
+                        Toast.makeText(
+                                getContext(),
+                                getString(R.string.coming_soon),
+                                Toast.LENGTH_SHORT
+                        ).show();
+                        break;
+
+                    case 3:
+                        Toast.makeText(
+                                getContext(),
+                                getString(R.string.coming_soon),
+                                Toast.LENGTH_SHORT
+                        ).show();
+                        break;
+
+                    case 4:
+                        Toast.makeText(
+                                getContext(),
+                                getString(R.string.coming_soon),
+                                Toast.LENGTH_SHORT
+                        ).show();
+                        break;
                 }
             }
 
             @Override
-            public void onTabUnselected(TabLayout.Tab tab) {
-                // Not needed
-            }
+            public void onTabUnselected(TabLayout.Tab tab) {}
 
             @Override
-            public void onTabReselected(TabLayout.Tab tab) {
-                // Not needed
-            }
+            public void onTabReselected(TabLayout.Tab tab) {}
         });
+
 
         binding.transactionsList.setLayoutManager(new LinearLayoutManager(requireContext()));
 
